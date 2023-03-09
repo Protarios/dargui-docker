@@ -1,0 +1,11 @@
+version: "1.0"
+
+services:
+    docker-dargui:
+        build: .
+        restart: always
+        tty: true
+        stdin_open: true
+        command: bash
+        ports:
+            - 5568:5568
