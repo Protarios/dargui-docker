@@ -16,3 +16,8 @@ dargui (https://dargui.sourceforge.io/) is an userinterface for UI for dar that 
 
 As dargui currently only support dar 2.6.12 I also created a command line only docker for dar 2.7.8
 https://github.com/Protarios/dar-docker/
+
+
+The docker container is available from docker hub at: zerginator/docker-dargui
+
+As the docker is terminal only I currently cannot install it directly from UnRaid Webinterface, as it immidately closes, so run it from the unraid console with an added execution of /bin/bash
