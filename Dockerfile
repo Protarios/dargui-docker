@@ -64,7 +64,7 @@ RUN apt-get update \
 		xterm \
 	&& rm -r /var/lib/apt/lists/*
 
-ENV DAR_VERSION 2.6.12
+ENV DAR_VERSION 2.7.14
 ENV DAR_URL http://netcologne.dl.sourceforge.net/project/dar/dar/$DAR_VERSION/dar-$DAR_VERSION.tar.gz
 
 RUN buildDeps=' \
@@ -95,7 +95,7 @@ RUN buildDeps=' \
 	&& rm -r src/dar \
 	&& apt-get purge -y --auto-remove $buildDeps
 
-ENV DARGUI_VERSION 1.2
+ENV DARGUI_VERSION 1.3
 ENV DARGUI_URL https://sourceforge.net/projects/dargui/files/dargui/$DARGUI_VERSION/dargui-$DARGUI_VERSION-bin.tar.gz/download
 
 RUN buildDeps=' \
